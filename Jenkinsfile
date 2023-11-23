@@ -2,9 +2,8 @@ pipeline {
   agent none
 
   environment {
-    AUTHOR = "Eko Kurniawan Khannedy"
-    EMAIL = "echo.khannedy@gmail.com"
-    WEB = "https://www.programmerzamannow.com"
+    AUTHOR = "leo"
+    EMAIL = "leosaragih001@gmail.com"
   }
 
 //  triggers {
@@ -204,7 +203,7 @@ pipeline {
       }
       steps {
         withCredentials([usernamePassword(
-            credentialsId: "eko_rahasia",
+            credentialsId: "leo",
             usernameVariable: "USER",
             passwordVariable: "PASSWORD"
         )]) {
